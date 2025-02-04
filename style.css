@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #404474;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  position: relative;
+  height: 300px;
+  width: 97%;
+  text-align: center;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: url("/Assets/Images/1733104418952_Blue Wavy Hills_62728.jpg");
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.container div {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #37A3FF;
+  margin: 10px;
+  border-radius: 50%;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+}
+
+.rock {
+  background: url('/Assets/Images/rock.png');
+  background-size: cover;
+}
+
+.paper {
+  background: url('/Assets/Images/paper.png');
+  background-size: cover;
+}
+
+.scissors {
+  background: url('/Assets/Images/scissors.png');
+  background-size: cover;
+}
+
+.container div:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.container div:active {
+  transform: scale(0.9);
+  opacity: 80%;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#score {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.result-bar {
+  margin-top: 15px;
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ccc;
+  border-radius: 5px;
+  transition: background-color 0.5s ease, transform 0.4s ease;
+}
+
+.result-bar.win {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+.result-bar.lose {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+#next-round-btn {
+  display: none;
+  margin-top: 20px;
+  padding: 10px 5px;
+  font-size: 16px;
+  background-color: #37A3FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#next-round-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#next-round-btn:active {
+  transform: scale(0.9);
+  background-color: #0056b3;
+}
+
+#resetBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 27px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #377DFF;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#resetBtn:hover {
+  background-color: #0056B3;
+  transform: scale(0.9);
+}
+
+#resetBtn:active {
+  transform: scale(0.9);
+  background: #2050AA;
+  color: #BFBFBF;
+}
+
+#music-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 110px;
+  height: 25px;
+  font-size: 16px;
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#music-toggle:hover {
+  background-color: #C70039;
+  transform: scale(1.05);
+}
+
+#music-toggle:active {
+  transform: scale(0.9);
+  background-color: #900C3F;
+}
+
+/* Experiment */
+details {
+  background-color: #FF5733;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+details[open] {
+  background-color: #FF5733;
+
+}
+#volume{
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
