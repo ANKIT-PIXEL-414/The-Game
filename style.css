@@ -25,7 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background: url("/Assets/Images/1733104418952_Blue Wavy Hills_62728.jpg");
+  background: url("./Assets/Images/1733104418952_Blue Wavy Hills_62728.jpg");
   background-size: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -50,17 +50,17 @@ h1 {
 }
 
 .rock {
-  background: url('/Assets/Images/rock.png');
+  background: url('./Assets/Images/rock.png');
   background-size: cover;
 }
 
 .paper {
-  background: url('/Assets/Images/paper.png');
+  background: url('./Assets/Images/paper.png');
   background-size: cover;
 }
 
 .scissors {
-  background: url('/Assets/Images/scissors.png');
+  background: url('./Assets/Images/scissors.png');
   background-size: cover;
 }
 
