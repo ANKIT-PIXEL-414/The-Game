@@ -6,16 +6,15 @@ const resetBtn = document.getElementById('resetBtn');
 const btn = document.querySelectorAll('.btn');
 const compMove = ['rock', 'paper', 'scissors'];
 
-// Audio dictionary
+// Audio dictionary with correct file paths
 const audioFiles = {
-  rock: new Audio('/Assets/audio/tap.wav'),
-  paper: new Audio('/Assets/audio/tap.wav'),
-  scissors: new Audio('/Assets/audio/tap.wav'),
-  uiClick: new Audio('/Assets/audio/click 2.wav'),
-  win: new Audio('/Assets/audio/winner.wav'),
-  lose: new Audio('/Assets/audio/lose.wav'),
+  rock: new Audio('./Assets/audio/tap.wav'),
+  paper: new Audio('./Assets/audio/tap.wav'),
+  scissors: new Audio('./Assets/audio/tap.wav'),
+  uiClick: new Audio('./Assets/audio/click 2.wav'),
+  win: new Audio('./Assets/audio/winner.wav'),
+  lose: new Audio('./Assets/audio/lose.wav'),
 };
-
 let playerScore = 0;
 let computerScore = 0;
 let gameInProgress = false;
